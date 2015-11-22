@@ -12,12 +12,12 @@ using UniversityofContoso.Models;
 
 namespace UniversityofContoso.Controllers
 {
-    public class CoursesController : ApiController
+    public class CoursesController : ApiController //Creates & Defines an Controller "CoursesController". //
     {
-        private UniversityofContosoContext db = new UniversityofContosoContext();
+        private UniversityofContosoContext db = new UniversityofContosoContext(); //Specifes that a databse is to be used using the Contoso Context. //
 
         // GET: api/Courses
-        public IQueryable<Course> GetCourses()
+        public IQueryable<Course> GetCourses() // IQueryable which is mentioned across the controllers defines portions of the query against the Associated Database. //
         {
             return db.Courses;
         }

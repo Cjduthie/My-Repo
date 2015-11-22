@@ -5,13 +5,13 @@ using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace UniversityofContoso
+namespace UniversityofContoso //Specifies the app and the namespace to use for classes. //
 {
-    public class SwaggerConfig
+    public class SwaggerConfig //Creates a public class "SwaggerConfig" that can be acessed by code that references it. //
     {
         public static void Register()
         {
-            var thisAssembly = typeof(SwaggerConfig).Assembly;
+            var thisAssembly = typeof(SwaggerConfig).Assembly; // A type is used in this case to reference itself (the SwaggerConfig file . //
 
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>

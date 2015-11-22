@@ -6,7 +6,7 @@ namespace UniversityofContoso
     public class BundleConfig
     {
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
-        public static void RegisterBundles(BundleCollection bundles)
+        public static void RegisterBundles(BundleCollection bundles) // The scripts below adds those functions from these files. //
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
@@ -22,7 +22,7 @@ namespace UniversityofContoso
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/css").Include( // These three lines Applies Style formatting from these files specifed in "Include". //
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
         }
