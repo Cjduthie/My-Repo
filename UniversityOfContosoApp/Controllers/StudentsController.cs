@@ -13,10 +13,9 @@ using UniversityofContoso.Models;
 namespace UniversityofContoso.Controllers
 {
     public class StudentsController : ApiController
-
-
     {
         private UniversityofContosoContext db = new UniversityofContosoContext();
+
         // GET: api/Students
         public IQueryable<Student> GetStudents()
         {
@@ -110,7 +109,6 @@ namespace UniversityofContoso.Controllers
             }
             base.Dispose(disposing);
         }
-
 
         private bool StudentExists(int id)
         {
